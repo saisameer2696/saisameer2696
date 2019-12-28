@@ -1,0 +1,44 @@
+<html>
+<head>
+<style>
+.head1{
+  background-color:#ffffff;
+ }
+ .man{
+  color:red;
+  }
+  .sub1
+  {
+   text-align:center;
+  }
+</style>
+<script type="text/javascript" src="test5.js">
+</script>
+</head>
+<body onload="fillbox()">
+<form>
+<table border="1px" align="center" width="50%" >
+<th class="head1"> Registration Form</th>
+<tr><td><div class="man">*</div>User Name:<input type="text" name="Name" id="NAME"></td></tr>
+
+<tr><td><div class="man">*</div>Password:<input type="password" name="pass" id="PASS1" ></td></tr>
+
+<tr><td><div class="man">*</div>Confirm Password:<input type="password" name="cpass" id="PASS2"></td></tr>
+
+<tr><td><div class="man">*</div>Gender:<input type="radio" name="GEN" value="MALE">MALE <input type="radio" name="GEN" value="FEMALE">FEMALE</td></tr>
+
+<tr><td><div class="man">*</div>Qualifications:<select id="qual" ></select>Sub-Qulifications<select id="squal" onchange="fillOpts()"></select></td></tr>
+
+<tr><td><div class="man">*</div>Dob:<input type="date" name="DOB" id="dob" onclick="dobVal()"></td></tr>
+
+<tr><td>Show password:<input type="checkbox" name="pvisible" id="pvisible1" onclick="showpass()"></tr></td>
+
+</table>
+<br>
+<div class="sub1">
+<input type="submit" name="Register"  onclick="executeform()" >
+</div>
+</form>
+<div class="man">*</div><div>Marked Fields Are Mandatory</div>
+</body>
+</html>
